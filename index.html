@@ -4,25 +4,124 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d7ead3007f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="logo.png" alt="Brand Logo" style="width:40px;" class="rounded-pill">
-        </a>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Brand Logo" style="width:30px;" class="rounded-pill">
+            </a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Products <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Middleware</a></li>
+                    <li><a href="#">Database</a></li>
+                    <li><a href="#">Application</a></li>
+                    <li><a href="#">Servers</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+
+        </ul>
     </div>
 </nav>
 
-<div class="container-fluid" style="margin-top:80px">
-    <h3>Top Fixed Navbar</h3>
-    <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-    <h1>Scroll this page to see the effect</h1>
+<div class="container-fluid " style="margin-top:80px">
+    <h1 class="text-center text-primary">welcome to Bootstrap</h1>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                        Collapsible Group 1</a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                        Collapsible Group 2</a>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</div>
+            </div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                        Collapsible Group 3</a>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <p class="bg-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+    <p class="bg-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor eligendi ex id magnam quod quos repellat! Doloribus facilis hic impedit minima, minus molestiae optio qui reiciendis similique tempore unde?</p>
+
 </div>
 
+<div class="container-fluid " style="margin-top:80px">
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 ">
+        <div class="container text-center">
+            <small>Copyright &copy; Your Website</small>
+            <a href="https://en.wikipedia.org/wiki/Google%2B" >
+                <i  style="font-size:40px" class="fab fa-google"></i>
+            </a>
+            <a href="https://www.facebook.com/">
+                <i style="font-size:40px" class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+                <i  style="font-size:40px" class="fab fa-linkedin"></i>
+
+            </a>
+
+        </div>
+    </footer>
+<!-- Footer -->
+
+
+    <!-- Footer -->
 </body>
 </html>
 
